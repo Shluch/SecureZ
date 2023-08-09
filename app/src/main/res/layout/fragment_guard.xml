@@ -115,7 +115,7 @@
         android:layout_width="107dp"
         android:layout_height="142dp"
         android:elevation="16dp"
-        android:src="@drawable/ic_guard1"
+        android:src="@drawable/guard3"
         app:layout_constraintBottom_toBottomOf="@id/green_card"
         app:layout_constraintEnd_toEndOf="@id/green_card"
         app:layout_constraintTop_toTopOf="@id/green_card" />
