@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,116 +8,53 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="16dp">
-
-        <TextView
-            android:id="@+id/title_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:elevation="16dp"
-            android:text="@string/my_family"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/title_text"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="-50dp"
-            android:elevation="16dp"
-            android:src="@drawable/ic_location" />
-
-        <ImageView
-            android:layout_width="30dp"
-           android:layout_height="30dp"
-            android:layout_toEndOf="@+id/title_text"
-            app:layout_constraintEnd_toEndOf="@+id/title_text"
-            app:layout_constraintTop_toTopOf="@+id/title_text"
-            android:elevation="16dp"
-            android:src="@drawable/ic_setting" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/profile1"
-            android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_below="@id/title_text"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:layout_marginEnd="@dimen/dimen_16"
-            android:layout_marginBottom="@dimen/dimen_16"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="@dimen/dimen_16"
-            app:cardElevation="8dp">
-
-            <!-- Move the contents of the profile1 fragment inside the card view -->
-
-            <ImageView
-                android:id="@+id/profile1_pic"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="start|center_vertical"
-                android:elevation="8dp"
-                android:src="@drawable/ic_profile" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:elevation="8dp"
-                android:text="Profile 1"
-                android:textAlignment="center"
-                android:textSize="32sp" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_margin="@dimen/dimen_16"
-                android:elevation="16dp"
-                android:src="@drawable/ic_call" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-
-    </RelativeLayout>
-    <!--<EditText
-        android:inputType="number"
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_16"
-        app:layout_constraintTop_toBottomOf="@+id/profile1" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="16dp"
+        android:text="@string/my_family"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view" />
 
-    <EditText
-        android:inputType="number"
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_16"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
--->
-    <!--<Button
-        android:id="@+id/cal"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-50dp"
+        android:elevation="16dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
 
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_16"
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-50dp"
+        android:elevation="16dp"
+        android:src="@drawable/ic_setting"
+        app:layout_constraintStart_toEndOf="@+id/title_text"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
 
-        android:text="SOS"
-        app:layout_constraintTop_toBottomOf="@+id/profile1" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_member"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

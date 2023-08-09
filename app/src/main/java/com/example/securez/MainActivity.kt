@@ -14,17 +14,20 @@ class MainActivity : AppCompatActivity() {
         var bottomBar = findViewById<BottomNavigationView>(R.id.bottom_bar)
 
         bottomBar.setOnItemSelectedListener {
-           if(it.itemId==R.id.nav_guard){
-               inflatefragment()
-           }else if (it.itemId==R.id.nav_home){
-               inflateHomefragment()
-           }else if(it.itemId==R.id.nav_dashboard)
-               inflateDashfragment()
-            else if (it.itemId==R.id.nav_help)
-               inflateHelpfragment()
+           when (it.itemId) {
+               R.id.nav_guard -> {
+                   inflatefragment()
+               }
+               R.id.nav_home -> {
+                   inflateHomefragment()
+               }
+               R.id.nav_dashboard -> inflateDashfragment()
+               R.id.nav_help -> inflateHelpfragment()
+           }
             true
             
         }
+        bottomBar.selectedItemId =R.id.nav_home
 
 
     }

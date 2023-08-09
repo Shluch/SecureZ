@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Card 1 -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/dimen_16"
+        android:id="@+id/profile1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="8dp"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/profile1_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center_vertical"
+            android:elevation="8dp"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:text="Profile "
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/dimen_16"
+            android:elevation="16dp"
+            android:src="@drawable/ic_call" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card 2 -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/dimen_16"
+        android:id="@+id/profile2"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="8dp"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/profile1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/profile2_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center_vertical"
+            android:elevation="8dp"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:text="Profile "
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/dimen_16"
+            android:elevation="16dp"
+            android:src="@drawable/ic_call"/>
+
+        <!-- Card 2 contents -->
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card 3 -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/dimen_16"
+        android:id="@+id/profile3"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="8dp"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/profile2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Card 3 contents -->
+        <ImageView
+            android:id="@+id/profile3_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center_vertical"
+            android:elevation="8dp"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:text="Profile "
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/dimen_16"
+            android:elevation="16dp"
+            android:src="@drawable/ic_call"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="@dimen/dimen_16"
+        android:id="@+id/profile4"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="8dp"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/profile3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Card 3 contents -->
+        <ImageView
+            android:id="@+id/profile4_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start|center_vertical"
+            android:elevation="8dp"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:text="Profile "
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/dimen_16"
+            android:elevation="16dp"
+            android:src="@drawable/ic_call"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
