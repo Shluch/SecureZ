@@ -18,13 +18,30 @@ class MainActivity : AppCompatActivity() {
                inflatefragment()
            }else if (it.itemId==R.id.nav_home){
                inflateHomefragment()
-           }
+           }else if(it.itemId==R.id.nav_dashboard)
+               inflateDashfragment()
+            else if (it.itemId==R.id.nav_help)
+               inflateHelpfragment()
             true
-            
+
         }
 
 
     }
+
+    private fun inflateHelpfragment() {
+        var transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container,DashboardFragment.newInstance("value1", "value2"))
+        transaction.commit()
+    }
+
+    private fun inflateDashfragment() {
+        var transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container,DashboardFragment.newInstance("value1", "value2"))
+        transaction.commit()
+
+    }
+
     private fun inflateHomefragment() {
         var transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container,HomeFragment.newInstance())
