@@ -22,6 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+
             android:id="@+id/profile1_pic"
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -30,8 +31,9 @@
             android:src="@drawable/ic_profile" />
 
         <TextView
+            android:id="@+id/profile1_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="33dp"
             android:layout_gravity="center"
             android:elevation="8dp"
             android:text="Profile "
@@ -39,6 +41,7 @@
             android:textSize="32sp" />
 
         <ImageView
+            android:id="@+id/callic"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end|center_vertical"
